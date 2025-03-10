@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Photobooth</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="photobooth">
+        <h1>Modern Photobooth</h1>
+        <div class="camera">
+            <video id="video" autoplay></video>
+            <div id="timer" class="timer">3</div>
+            <canvas id="canvas" style="display:none;"></canvas>
+        </div>
+        <div class="controls">
+            <button id="snap">Ambil Foto</button>
+            <button id="burst">Mode Burst (3 Foto)</button>
+            <select id="filter">
+                <option value="none">Tanpa Filter</option>
+                <option value="grayscale">Grayscale</option>
+                <option value="sepia">Sepia</option>
+                <option value="invert">Invert</option>
+                <option value="blur">Blur</option>
+                <option value="brightness">Brightness</option>
+                <option value="contrast">Contrast</option>
+                <option value="hue-rotate">Hue Rotate</option>
+                <option value="saturate">Saturate</option>
+                <option value="glasses">Kacamata</option>
+            </select>
+        </div>
+        <div class="gallery" id="gallery"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
